@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		673A2C88516FCBD2A8F095D9 /* Pods_CompTIA2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC980ADAFEA9E8ED14923A0 /* Pods_CompTIA2.framework */; };
+		DE93B5EC2DB252420072A6AD /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93B5EB2DB252420072A6AD /* RequestReview.swift */; };
 		DEF351842DA004310024180C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF351782DA004310024180C /* Assets.xcassets */; };
 		DEF351862DA004310024180C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF3517B2DA004310024180C /* LaunchScreen.storyboard */; };
 		DEF353582DA005C30024180C /* SettingsPremiumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF352372DA005C30024180C /* SettingsPremiumCell.swift */; };
@@ -309,7 +310,6 @@
 		DEF354802DA005C30024180C /* NavigationControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3518F2DA005C30024180C /* NavigationControllerSettings.swift */; };
 		DEF354812DA005C30024180C /* TestStatsTableFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF352E02DA005C30024180C /* TestStatsTableFilterCell.swift */; };
 		DEF354822DA005C30024180C /* PracticeTestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF351EB2DA005C30024180C /* PracticeTestButton.swift */; };
-		DEF354832DA005C30024180C /* TestRateUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF352B82DA005C30024180C /* TestRateUs.swift */; };
 		DEF354842DA005C30024180C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF353202DA005C30024180C /* Review.swift */; };
 		DEF354852DA005C30024180C /* StatsTableUnlockPremiumFakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3524D2DA005C30024180C /* StatsTableUnlockPremiumFakeCell.swift */; };
 		DEF354862DA005C30024180C /* CustomTestAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF352932DA005C30024180C /* CustomTestAttributes.swift */; };
@@ -352,6 +352,7 @@
 /* Begin PBXFileReference section */
 		5850F6DBB18B505B7737922E /* Pods-CompTIA2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompTIA2.release.xcconfig"; path = "Target Support Files/Pods-CompTIA2/Pods-CompTIA2.release.xcconfig"; sourceTree = "<group>"; };
 		DCC980ADAFEA9E8ED14923A0 /* Pods_CompTIA2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CompTIA2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE93B5EB2DB252420072A6AD /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEF3515F2DA0042B0024180C /* CompTIA2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompTIA2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF351782DA004310024180C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF351792DA004310024180C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -574,7 +575,6 @@
 		DEF352B32DA005C30024180C /* TestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestType.swift; sourceTree = "<group>"; };
 		DEF352B52DA005C30024180C /* TestCloseMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseMediator.swift; sourceTree = "<group>"; };
 		DEF352B62DA005C30024180C /* TestCloseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseObserver.swift; sourceTree = "<group>"; };
-		DEF352B82DA005C30024180C /* TestRateUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRateUs.swift; sourceTree = "<group>"; };
 		DEF352BA2DA005C30024180C /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		DEF352BC2DA005C30024180C /* QuestionContentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionCell.swift; sourceTree = "<group>"; };
 		DEF352BD2DA005C30024180C /* QuestionContentCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionType.swift; sourceTree = "<group>"; };
@@ -863,6 +863,7 @@
 				DEF351B32DA005C30024180C /* TextAttributes.swift */,
 				DEF351B42DA005C30024180C /* Weak.swift */,
 				DEF351B52DA005C30024180C /* XOREncryption.swift */,
+				DE93B5EB2DB252420072A6AD /* RequestReview.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1651,14 +1652,6 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
-		DEF352B92DA005C30024180C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DEF352B82DA005C30024180C /* TestRateUs.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		DEF352BB2DA005C30024180C /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
@@ -1727,7 +1720,6 @@
 			children = (
 				DEF352B42DA005C30024180C /* Model */,
 				DEF352B72DA005C30024180C /* Observer */,
-				DEF352B92DA005C30024180C /* Utils */,
 				DEF352CF2DA005C30024180C /* Views */,
 				DEF352D02DA005C30024180C /* TestView.swift */,
 				DEF352D12DA005C30024180C /* TestViewController.swift */,
@@ -2427,6 +2419,7 @@
 				DEF353D42DA005C30024180C /* UIView+RxExtension.swift in Sources */,
 				DEF353D52DA005C30024180C /* QuestionContentCollectionCell.swift in Sources */,
 				DEF353D62DA005C30024180C /* CoursesView.swift in Sources */,
+				DE93B5EC2DB252420072A6AD /* RequestReview.swift in Sources */,
 				DEF353D72DA005C30024180C /* QuestionsCountCollectionCell.swift in Sources */,
 				DEF353D82DA005C30024180C /* PaygateLifetimeButton.swift in Sources */,
 				DEF353D92DA005C30024180C /* OExamsTable.swift in Sources */,
@@ -2599,7 +2592,6 @@
 				DEF354802DA005C30024180C /* NavigationControllerSettings.swift in Sources */,
 				DEF354812DA005C30024180C /* TestStatsTableFilterCell.swift in Sources */,
 				DEF354822DA005C30024180C /* PracticeTestButton.swift in Sources */,
-				DEF354832DA005C30024180C /* TestRateUs.swift in Sources */,
 				DEF354842DA005C30024180C /* Review.swift in Sources */,
 				DEF354852DA005C30024180C /* StatsTableUnlockPremiumFakeCell.swift in Sources */,
 				DEF354862DA005C30024180C /* CustomTestAttributes.swift in Sources */,
@@ -2663,7 +2655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWST5PC946;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2679,7 +2671,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.comptia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2702,7 +2694,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWST5PC946;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2718,7 +2710,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.comptia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
