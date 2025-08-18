@@ -46,7 +46,7 @@ private extension PaygateView {
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 230.scale : 159.scale),
+            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 230.scale : 167.scale),
             imageView.topAnchor.constraint(equalTo: topAnchor)
         ])
         
@@ -128,6 +128,7 @@ private extension PaygateView {
 private extension PaygateView {
     func makeCloseButton() -> TapAreaButton {
         let view = TapAreaButton()
+        view.tintColor = Appearance.mono100
         view.setImage(UIImage(named: "Paygate.Close"), for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
